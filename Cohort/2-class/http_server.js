@@ -1,11 +1,13 @@
 const express = require('express')
-const app = express()
+// fs --> filesystem --> read and write file on system
+// express --> filesystem --> read and write file on http server
 const port = 3000
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+const app = express();
+app.get('/',function(req, res) {    // function() == ()=>{}
+  res.send('Hello World! wow gg')
 })
-console.log();
-app.listen(port, () => {
+
+app.listen(port, function()  {
+  
   console.log(`Example app listening on port ${port}`)
 })
