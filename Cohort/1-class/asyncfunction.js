@@ -7,7 +7,7 @@ function iteration(number){
     }
     console.log(ans);
 }
-gfg
+
 function iterator(){
     return iteration(100);
 }
