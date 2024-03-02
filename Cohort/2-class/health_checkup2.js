@@ -47,9 +47,9 @@ app.post("/health-checkup2", function(req,res){
 // });
 app.listen(3000);
 
-// example schema ZOD
+// example schema ZOD...check documentation for more
 // const schema = zod.object({
-//     email : zod.string(),
+//     email : zod.string().email(),
 //     password : zod.string(),
 //     country : zod.literal("IN").or(z.litra("US")),
 //     kidneys : z.array(z.number())
