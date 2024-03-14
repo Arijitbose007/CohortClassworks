@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Name Greeting</title>
+</head>
+<body>
+
+    <p class = "intro">Hello world</p>
+    <p class = "intro">Hello world2</p>
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput">
+    <button onclick="displayGreeting()">Submit</button>
+    
+    <p id="demo"></p>
+    <p id="greetingMessage"></p>
+
+    <script>
+        
+        const x = document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML = 'The first paragraph is : ' + x[0].innerHTML;
+
+        function displayGreeting() {
+            // Get the entered name from the input field
+            var enteredName = document.getElementById("nameInput").value;
+
+            // Render the greeting message on the DOM using innerHTML
+            document.getElementById("greetingMessage").innerHTML = "Hello, " + enteredName + "!";
+        }
+    </script>
+
+</body>
+</html>
+<!-- reference -->
+<!-- https://quickest-juniper-f9c.notion.site/Week-3-5-a22dfeab1af84ec4b453ca565c57b27a -->
+<!-- https://quickest-juniper-f9c.notion.site/Week-4-1-647987d9b1894c54ba5c822978377910 -->
